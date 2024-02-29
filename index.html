@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index Form-login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+        }
+        .content{
+            width: 100%;
+            height: 745px;
+            background-color: aqua;
+            position: relative;
+            display: flex;
+        }
+        .content > img{
+            width: 50%;
+        }
+        .content > form{
+            position: relative;
+            width: 400px;
+            height: 530px;
+            background-color: white;
+            margin: auto;
+            border-radius: 10px;
+            padding: 25px 30px;
+        }
+        .form-login > h2{
+            text-align: center;
+            color: blue;
+        }
+        .form-employee{
+            position: relative;
+        }
+        .form-employee>input{
+            width: 49%;
+            height: 60px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }.form-employee > .fa-briefcase{
+            position: absolute;
+            left: 18px;
+            top: 33px;
+            font-size: 30px;
+            color: aqua;
+        }
+        .form-employee > .fa-user-tie{
+            position: absolute;
+            right: 125px;
+            top: 33px;
+            font-size: 30px;
+            color: aqua;
+        }
+        form > .manager{
+            position: absolute;
+            top: 80px;
+            left: 93px;
+        }
+        form > .employee{
+            position: absolute;
+            top: 80px;
+            right: 62px;
+        }
+        .form-user{
+            position: relative;
+        }
+        form > .form-user >input{
+            width: 100%;
+            height: 50px;
+            border-radius: 10px;
+            padding: 10px 35px;
+        }
+        .form-user > .user{
+            margin-top: 20px;
+        }
+        ::placeholder{
+            font-size: 20px;
+            font-family: 'Segoe';
+        }
+        .form-user > .fa-user,.fa-lock{
+            position: relative;
+            font-size: 20px;
+            bottom: 36px;
+            left: 310px;
+        } 
+        .form-checkbox > span{
+            font-size: 20px;
+        }
+        .form-checkbox >a{
+            font-size: 20px;
+            float: right;
+            text-decoration: none;
+        }
+        .form-submit{
+            position: relative;
+        }
+        .form-submit > input{
+            width: 100%;
+            height: 45px;
+            border-radius: 10px;
+            padding: 10px 30px;
+            background-color: aqua;
+            margin-top: 20px;
+            cursor: pointer;
+            font-family: 'Segoe';
+            font-size: 20px;
+        }
+        .form-submit >h3{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-submit > .register{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="content">
+            <img src="team_company.png" alt="">
+            <form action="#">
+                <div class="form-login">
+                    <h2>Login to DeskApp</h2>
+                </div>
+                <div class="form-employee">
+                    <input type="text">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <input type="text">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div class="manager">
+                    <h4>I'm</h4><h3>Manager</h3>
+                </div>
+                <div class="employee">
+                    <h4>I'm</h4><h3>Employee</h3>
+                </div>
+                <div class="form-user">
+                    <input class="user" type="text" placeholder="Username">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="form-user">
+                    <input type="password" placeholder="Password">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox">
+                    <span>Remember me?</span>
+                    <a href="#">Forgot Password</a>
+                </div>
+                <div class="form-submit">
+                    <input type="submit" value="Sign In">
+                    <h3>OR</h3>
+                    <input class="register" type="submit" value="Register To Create Account">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
